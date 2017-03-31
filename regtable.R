@@ -48,4 +48,3 @@ regtable = function(fit=fit,log=FALSE,caption=caption){
 
 
 
-regtable(intake.fit1,log = TRUE)
