@@ -41,10 +41,11 @@ regtable = function(fit=fit,log=FALSE,caption=caption){
     )
     
     hold.df_v2 = as_tibble(hold.df)
-    names(hold.df_v2) = c('Variabales','Estimates','95% CI','p-value')
+    names(hold.df_v2) = c('Variables','Estimates','95% CI','p-value')
     return(hold.df_v2)
     
 }
 
 
 
+regtable(intake.fit1,log = TRUE)
