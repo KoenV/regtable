@@ -9,7 +9,7 @@ reg_table = function(fit=fit,log=FALSE,roundings=3){
     
     require(Hmisc)
     require(car)
-    require(tibble)
+    suppressMessages(require(tibble))
     
     format_pval.table <- function(x){
         if (x < .001) return(paste('<', '.001'))
