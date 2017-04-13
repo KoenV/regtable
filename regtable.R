@@ -53,7 +53,7 @@ reg_table = function(fit=fit,log=FALSE,roundings=3){
             logical_row = grepl(model_variables[i],rownames(test))
 
             
-            table[[i]][1,5] = ifelse(nrow(table[[i]])==2,'',
+            table[[i]][1,5] = ifelse(nrow(table[[i]])==3,'',
                 format_pval.table(test[logical_row,5]))
             
         
