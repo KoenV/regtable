@@ -1,11 +1,10 @@
 # ##############################################################################
 # function to make tables for lm and glm objects
 # koen.vanbrabant@kuleuven.be
-# date: 13/04/2017
+# date: 24/04/2017
 ################################################################################
 
-
-reg_table = function(fit=fit,log=FALSE,roundings=3){
+reg_table = function(fit=fit,data=data,log=FALSE,roundings=3){
     
     require(Hmisc)
     require(car)
@@ -26,8 +25,6 @@ reg_table = function(fit=fit,log=FALSE,roundings=3){
             summary_table[,1]=exp(summary_table[,1])
     }
     
-    
-    data = fit$data
     
     table = vector('list',length(model_variables)+1)
 
